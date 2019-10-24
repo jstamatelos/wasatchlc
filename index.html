@@ -36,39 +36,39 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
         style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+        <a href="javascript:void(0)" onclick="close()" class="w3-button w3-hide-large w3-display-topleft"
             style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
             <h3 class="w3-padding-64"><b>Wasatch<br>Lacrosse Club</b></h3>
         </div>
         <div class="w3-bar-block">
-            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-            <a href="#mission" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mission</a>
-            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-            <a href="#coaches" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coaches</a>
-            <a href="#roster" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Roster</a>
-            <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
-            <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
-            <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
-
-            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact and FAQ</a>
+            <a href="#" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#mission" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Mission</a>
+            <a href="#about" onclick="close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="#coaches" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Coaches</a>
+            <a href="#roster" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Roster</a>
+            <a href="#packages" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+            <a href="#media" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Media</a>
+            <a href="#testimonials" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
+            <a href="#faq" onclick="close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
+            <a href="#contact" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
         </div>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="open()">☰</a>
         <span>Wasatch LC</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    <div class="w3-overlay w3-hide-large" onclick="close()" style="cursor:pointer" title="close side menu"
         id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-        <!-- Header -->
+        <!-- Mission -->
         <div class="w3-container" style="margin-top:80px" id="mission">
             <h1 class="w3-jumbo"><b>Wasatch LC</b></h1>
             <h1 class="w3-xxxlarge w3-text-red"><b>Mission.</b></h1>
@@ -91,6 +91,7 @@
                 <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
             </div>
         </div>
+        <!-- Mission End -->
 
         <!-- Modal for full size images on click-->
         <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -224,12 +225,43 @@
                     </li>
                 </ul>
             </div>
-        <!-- Packages / Tables End -->
+            <!-- Packages / Tables End -->
+            <!-- Media -->
+            <div class="w3-container" style="margin-top:80px" id="media">
+                <h1 class="w3-xxxlarge w3-text-red"><b>Media.</b></h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+            </div>
+
+            <!-- Photo grid (modal) -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
+                </div>
+
+                <div class="w3-half">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
+                </div>
+
+                <div class="w3-half">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
+                </div>
+                <div class="w3-half">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
+                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
+                </div>
+            </div>
+            <!-- Media End -->
             <!-- Testimonials -->
             <div class="w3-container" id="testimonials" style="margin-top:75px">
                 <h1 class="w3-xxxlarge w3-text-red"><b>Testimonials.</b></h1>
                 <hr style="width:50px;border:5px solid red" class="w3-round">
-                <p>Testimonials</p>
             </div>
             <div class="w3-row-padding">
                 <div class="w3-half w3-margin-bottom">
@@ -247,7 +279,6 @@
             <div class="w3-container" id="faq" style="margin-top:75px">
                 <h1 class="w3-xxxlarge w3-text-red"><b>FAQ.</b></h1>
                 <hr style="width:50px;border:5px solid red" class="w3-round">
-                <p>FAQ</p>
             </div>
             <div class="w3-row-padding">
                 <div class="w3-half w3-margin-bottom">
@@ -294,12 +325,12 @@
 
         <script>
             // Script to open and close sidebar
-            function w3_open() {
+            function open() {
                 document.getElementById("mySidebar").style.display = "block";
                 document.getElementById("myOverlay").style.display = "block";
             }
 
-            function w3_close() {
+            function close() {
                 document.getElementById("mySidebar").style.display = "none";
                 document.getElementById("myOverlay").style.display = "none";
             }
