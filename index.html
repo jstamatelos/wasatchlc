@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Wasatch LC</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -36,33 +36,33 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
         style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-        <a href="javascript:void(0)" onclick="close()" class="w3-button w3-hide-large w3-display-topleft"
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
             style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
             <h3 class="w3-padding-64"><b>Wasatch<br>Lacrosse Club</b></h3>
         </div>
         <div class="w3-bar-block">
-            <a href="#" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-            <a href="#mission" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Mission</a>
-            <a href="#about" onclick="close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-            <a href="#coaches" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Coaches</a>
-            <a href="#roster" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Roster</a>
-            <a href="#packages" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
-            <a href="#media" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Media</a>
-            <a href="#testimonials" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
-            <a href="#faq" onclick="close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
-            <a href="#contact" onclick="close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+            <a href="#mission" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mission</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="#coaches" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coaches</a>
+            <a href="#roster" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Roster</a>
+            <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+            <a href="#media" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Media</a>
+            <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
+            <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
         </div>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="open()">☰</a>
+        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
         <span>Wasatch LC</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="close()" style="cursor:pointer" title="close side menu"
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
         id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
@@ -128,7 +128,7 @@
         <div class="w3-row-padding w3-grayscale">
             <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+                    <img src="" alt="John" style="width:100%">
                     <div class="w3-container">
                         <h3>John Doe</h3>
                         <p class="w3-opacity">Title</p>
@@ -138,7 +138,7 @@
             </div>
             <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                    <img src="" alt="Jane" style="width:100%">
                     <div class="w3-container">
                         <h3>Jane Doe</h3>
                         <p class="w3-opacity">Title</p>
@@ -148,7 +148,7 @@
             </div>
             <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+                    <img src="" alt="Mike" style="width:100%">
                     <div class="w3-container">
                         <h3>Mike Ross</h3>
                         <p class="w3-opacity">Title</p>
@@ -187,7 +187,7 @@
             </div>
             <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+                    <img src="" alt="Mike" style="width:100%">
                     <div class="w3-container">
                         <h3>Player Name</h3>
                         <p class="w3-opacity">Player Position</p>
@@ -325,12 +325,12 @@
 
         <script>
             // Script to open and close sidebar
-            function open() {
+            function w3_open() {
                 document.getElementById("mySidebar").style.display = "block";
                 document.getElementById("myOverlay").style.display = "block";
             }
 
-            function close() {
+            function w3_close() {
                 document.getElementById("mySidebar").style.display = "none";
                 document.getElementById("myOverlay").style.display = "none";
             }
