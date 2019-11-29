@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Media</title>
+<title>Tournament Results</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,14 +15,15 @@
         font-family: "Poppins", sans-serif
     }
 
+    span {
+        color: black;
+    }
+
     body {
         font-size: 16px;
         background-color: lightgray;
     }
 
-    span {
-        color: black;
-    }
 
     .w3-half img {
         margin-bottom: -6px;
@@ -44,19 +45,18 @@
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
             style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Media</b></h3>
+            <h3 class="w3-padding-64"><b>Tournament Results</b></h3>
         </div>
         <div class="w3-bar-block">
             <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
             <a href="../../index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-            <a href="../pages/commits.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">College
-                Commits</a>
             <a href="../../index.html#coaches" onclick="w3_close()"
                 class="w3-bar-item w3-button w3-hover-white">Coaches</a>
             <a href="../pages/roster.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Roster</a>
             <a href="../pages/team.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teams</a>
-            <a href="../pages/results.html" onclick="w3_close()"
-            class="w3-bar-item w3-button w3-hover-white">Tournament Results</a>
+            <a href="../pages/commits.html" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-hover-white">College Commits</a>
+            <a href="../pages/media.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Media</a>
             <a href="../../index.html#testimonials" onclick="w3_close()"
                 class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
             <a href="../../index.html#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
@@ -70,7 +70,7 @@
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-        <span>Media</span>
+        <span>Tournament Results</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -89,88 +89,113 @@
             </div>
         </div>
 
-        <!-- Media -->
-        <div class="w3-container" style="margin-top:80px" id="media">
+        <!-- 2020 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2020</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
         </div>
 
-        <!-- Photo grid (modal) -->
         <div class="w3-row-padding">
-            <div class="w3-half">
-                <div>
-                    <a href="https://www.youtube.com/user/WasatchLC/featured" target="_blank">
-                        <img src="../images/logo/new-youtube-logo.jpg" style="width:100%"
-                            alt="Check us out on youtube"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <a href="https://blatantteamstore.com/collections/wasatch-lacrosse-club-team-store" target="_blank">
-                        <img src="../images/logo/team-store-logo.jpeg" style="width:100%"
-                            alt="Check out the team store"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.one.jpeg" style="width:100%"
-                        alt="img 1"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.two.jpeg" style="width:100%"
-                        alt="img 2"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.three.jpeg" style="width:100%"
-                        alt="img 3"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.four.jpeg" style="width:100%"
-                        alt="img 4"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.five.jpeg" style="width:100%"
-                        alt="img 5"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.six.jpeg" style="width:100%"
-                        alt="img 6"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.seven.jpg" style="width:100%"
-                        alt="img 7"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.eight.jpeg" style="width:100%"
-                        alt="img 8"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.nine.jpeg" style="width:100%"
-                        alt="img 9"></a>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div>
-                    <img src="../images/media/media.photo.ten.jpeg" style="width:100%"
-                        alt="img 10"></a>
-                </div>
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- Media End -->
+        <!-- 2020 End -->
+
+        <!-- 2019 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2019</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2019 End -->
+        <!-- 2018 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2018</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2018 End -->
+        <!-- 2017 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2017</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2017 End -->
+        <!-- 2016 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2016</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2016 End -->
+        <!-- 2015 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2015</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2015 End -->
+        <!-- 2014 -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>2014</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round">
+        </div>
+
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 2014 End -->
+        <!-- Players End -->
         <!-- End page content -->
     </div>
     <!-- W3.CSS Container -->
