@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
 <style>
     body,
     h1,
@@ -15,8 +16,13 @@
         font-family: "Poppins", sans-serif
     }
 
+    span {
+        color: black;
+    }
+
     body {
         font-size: 16px;
+        background-color: lightgray;
     }
 
     .w3-half img {
@@ -44,12 +50,19 @@
         <div class="w3-bar-block">
             <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
             <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="./resources/pages/commits.html" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">College Commits</a>
             <a href="#coaches" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coaches</a>
-            <a href="./resources/pages/roster.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Roster</a>
-            <a href="./resources/pages/team.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teams</a>
-            <a href="#media" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Media</a>
+            <a href="./resources/pages/roster.html" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">Roster</a>
+            <a href="./resources/pages/team.html" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">Teams</a>
+            <a href="./resources/pages/media.html" onclick="w3_close()"
+                class="w3-bar-item w3-button w3-hover-white">Media</a>
             <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
             <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
+            <a href="https://blatantteamstore.com/collections/wasatch-lacrosse-club-team-store" target="_blank"
+                onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team Store</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
         </div>
     </nav>
@@ -199,215 +212,146 @@
         </div>
         <!-- Coaches End -->
 
-        <!-- Players Above Photos -->
-        <div class="w3-container" id="roster" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Roster.</b></h1>
+        <!-- Testimonials -->
+        <div class="w3-container" id="testimonials" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Testimonials.</b></h1>
             <hr style="width:50px;border:5px solid red" class="w3-round">
-            <p>The best players in the world.</p>
         </div>
-        <!-- Players Photos -->
-        <div class="w3-row-padding w3-grayscale">
-            <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
-                    <img src="" alt="Player Name" style="width:100%">
-                    <div class="w3-container">
-                        <h3>John Doe</h3>
-                        <p class="w3-opacity">Player Position</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
-                    <img src="" alt="Player Name" style="width:100%">
-                    <div class="w3-container">
-                        <h3>John Doe</h3>
-                        <p class="w3-opacity">Player Position</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
-                    <img src="" alt="Mike" style="width:100%">
-                    <div class="w3-container">
-                        <h3>Player Name</h3>
-                        <p class="w3-opacity">Player Position</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Players End -->
 
-            <!-- Media -->
-            <div class="w3-container" style="margin-top:80px" id="media">
-                <h1 class="w3-xxxlarge w3-text-red"><b>Media.</b></h1>
+        <div class="w3-row-padding">
+            <div class="w3-full w3-margin-bottom">
+                <ul class="w3-ul w3-light-grey w3-center">
+                    <li class="w3-padding-16">
+                        <h4>Shane Doss (Notre Dame '17) - Apex Lacrosse Events Director</h4>
+                        <p>Just wanted to say thanks again for coming to our tournament, I hope it was a great
+                            experience despite the heat. Every time I saw you guys it looked like you were having
+                            fun and making the most of it, so cool to see after seeing all the crazy stuff that goes
+                            on at the club level. You guys are definitely one of the few programs out there doing it
+                            right!! Got the chance to meet some of your kids at the All-Star game, really great
+                            dudes. Best of luck with everything, let me know if you guys ever need anything from
+                            me!!</p>
+                    </li>
+                    <li class="w3-padding-16">
+                        <h4>Bill Freedman - Provo, UT</h4>
+                        <p>My son had played on numerous club lacrosse team. I was totally impressed with the
+                            quality of the experience provided by Wasatch LC! The coaches are everything you hope
+                            for as a parent. They are organized well in advance, forthcoming with information, not
+                            afraid to face the best talent, and provide excellent coaching! They earn an A+ in my
+                            book. Honestly, every game is filmed and posted, stats are recorded and provided, it’s a
+                            top notch program in every way from start to finish.</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Testimonials End -->
+            <!-- FAQ -->
+            <div class="w3-container" id="faq" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-red"><b>FAQ.</b></h1>
                 <hr style="width:50px;border:5px solid red" class="w3-round">
             </div>
-
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-                <div class="w3-half">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
-                </div>
-
-                <div class="w3-half">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some team photos">
-                </div>
-
-                <div class="w3-half">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
-                </div>
-                <div class="w3-half">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
-                    <img src="" style="width:100%" onclick="onClick(this)" alt="Some highlight videos">
-                </div>
-            </div>
-            <!-- Media End -->
-            <!-- Testimonials -->
-            <div class="w3-container" id="testimonials" style="margin-top:75px">
-                <h1 class="w3-xxxlarge w3-text-red"><b>Testimonials.</b></h1>
-                <hr style="width:50px;border:5px solid red" class="w3-round">
-            </div>
-
             <div class="w3-row-padding">
                 <div class="w3-full w3-margin-bottom">
                     <ul class="w3-ul w3-light-grey w3-center">
                         <li class="w3-padding-16">
-                            <h4>Shane Doss (Notre Dame '17) - Apex Lacrosse Events Director</h4>
-                            <p>Just wanted to say thanks again for coming to our tournament, I hope it was a great
-                                experience despite the heat. Every time I saw you guys it looked like you were having
-                                fun and making the most of it, so cool to see after seeing all the crazy stuff that goes
-                                on at the club level. You guys are definitely one of the few programs out there doing it
-                                right!! Got the chance to meet some of your kids at the All-Star game, really great
-                                dudes. Best of luck with everything, let me know if you guys ever need anything from
-                                me!!</p>
+                            <h4>What tournaments is Wasatch LC attending in Summer of 2020?</h4>
+                            <p>U19 Vail Lacrosse Shootout - Vail, Colorado (June 28- July 1)</p>
+                            <p>Lax Federation Members Cup - North East, Maryland (July 9-10)</p>
+                            <p>FLG in 3D - Boyds, Maryland (July 10-12)</p>
+                            <p>Summer Inside Lacrosse Recruiting Invitational - Bel Air, Maryland (July 13-15)</p>
                         </li>
                         <li class="w3-padding-16">
-                            <h4>Bill Freedman - Provo, UT</h4>
-                            <p>My son had played on numerous club lacrosse team. I was totally impressed with the
-                                quality of the experience provided by Wasatch LC! The coaches are everything you hope
-                                for as a parent. They are organized well in advance, forthcoming with information, not
-                                afraid to face the best talent, and provide excellent coaching! They earn an A+ in my
-                                book. Honestly, every game is filmed and posted, stats are recorded and provided, it’s a
-                                top notch program in every way from start to finish.</p>
+                            <h4>How much does it cost to play for the Wasatch LC?</h4>
+                            <p>
+                                We do not run this team to make a profit, therefore our team costs tend to be a lot
+                                lower than other teams.
+                                We do not have a yearly team fee. Fees are determined by tournament cost, hotel
+                                availability, meals, and transportation.
+                                <p>Below are a cost breakdown for each tournament we are attending in the Summer of
+                                    2020:<br></p>
+                                <p>Ski Town Shootout - $250 (includes team fees, tournament fee, practices,
+                                    scrimmages, and coaches)</p>
+                                <p>U19 Vail Lacrosse Shootout - $675 (includes hotel (four nights), food (all meals
+                                    from Sunday breakfast to Wednesday breakfast), tournament fee, practices,
+                                    scrimmages, and coaches. NOT INCLUDED: transportation to/from Vail)</p>
+                                <p>Lax Federation Members Cup, FLG in 3D, and Summer Inside Lacrosse Recruiting
+                                    Invitational- $1750 (includes team fees, three high-level recruiting
+                                    tournaments, exposure to 100+ college coaches, hotel & accommodations for 8
+                                    nights, all meals, van rental/transportation in Maryland, gas, practices,
+                                    scrimmages and coaches. NOT INCLUDED: Airfare)</p>
+                            </p>
                         </li>
-                    </ul>
-                </div>
-                <!-- Testimonials End -->
-                <!-- FAQ -->
-                <div class="w3-container" id="faq" style="margin-top:75px">
-                    <h1 class="w3-xxxlarge w3-text-red"><b>FAQ.</b></h1>
-                    <hr style="width:50px;border:5px solid red" class="w3-round">
-                </div>
-                <div class="w3-row-padding">
-                    <div class="w3-full w3-margin-bottom">
-                        <ul class="w3-ul w3-light-grey w3-center">
-                            <li class="w3-padding-16">
-                                <h4>What tournaments is Wasatch LC attending in Summer of 2020?</h4>
-                                <p>U19 Vail Lacrosse Shootout - Vail, Colorado (June 28- July 1)</p>
-                                <p>Lax Federation Members Cup - North East, Maryland (July 9-10)</p>
-                                <p>FLG in 3D - Boyds, Maryland (July 10-12)</p>
-                                <p>Summer Inside Lacrosse Recruiting Invitational - Bel Air, Maryland (July 13-15)</p>
-                            </li>
-                            <li class="w3-padding-16">
-                                <h4>How much does it cost to play for the Wasatch LC?</h4>
-                                <p>
-                                    We do not run this team to make a profit, therefore our team costs tend to be a lot
-                                    lower than other teams.
-                                    We do not have a yearly team fee. Fees are determined by tournament cost, hotel
-                                    availability, meals, and transportation.
-                                    <p>Below are a cost breakdown for each tournament we are attending in the Summer of
-                                        2020:<br></p>
-                                    <p>Ski Town Shootout - $250 (includes team fees, tournament fee, practices,
-                                        scrimmages, and coaches)</p>
-                                    <p>U19 Vail Lacrosse Shootout - $675 (includes hotel (four nights), food (all meals
-                                        from Sunday breakfast to Wednesday breakfast), tournament fee, practices,
-                                        scrimmages, and coaches. NOT INCLUDED: transportation to/from Vail)</p>
-                                    <p>Lax Federation Members Cup, FLG in 3D, and Summer Inside Lacrosse Recruiting
-                                        Invitational- $1750 (includes team fees, three high-level recruiting
-                                        tournaments, exposure to 100+ college coaches, hotel & accommodations for 8
-                                        nights, all meals, van rental/transportation in Maryland, gas, practices,
-                                        scrimmages and coaches. NOT INCLUDED: Airfare)</p>
-                                </p>
-                            </li>
 
-                            <li class="w3-padding-16">
-                                <h4>How do I join Wasatch LC?</h4>
-                                <p>
-                                    If you are interested in joining Wasatch Lacrosse Club, first please read our
-                                    Mission Statement to confirm you are willing to abide by it if chosen to play with
-                                    Wasatch LC.
-                                    If so, contact our Coaching Staff with any information about your lacrosse career
-                                    you can provide (accurate season stats, highlight or game film, coaches
-                                    recommendations, etc.) and fill out our Player Information Sheet.
-                                    Please email your Player Information Sheet and details about when Wasatch coaches
-                                    can see you play to WasatchLC@gmail.com.
-                                    The best ways for the coaches to watch you play is during the spring season or by
-                                    sending us game film and/or highlights.
-                                </p>
-                            </li>
-                            <li class="w3-padding-16">
-                                <h4>Why play for Wasatch LC over other Club teams?</h4>
-                                <p>
-                                    We have an amazing team culture. By surrounding elite players with other elite
-                                    players, we believe that the overall skill and level of play is greatly elevated.
-                                    With over 75 years of combined playing and coaching experience, our coaching staff
-                                    coordinates our talent for success on the field and succes in college.
-                                    We attend well nationally known tournaments and set up scrimmages against high-level
-                                    competition. Each of our tournament games and scrimmages are filmed, and then we
-                                    produce highlight videos to showcase our team, which are posted on to our YouTube
-                                    page and the media page our website.
-                                    Stats are also recorded from each game and posted on our website for easy access to
-                                    players and college coaches.
-                                </p>
-                            </li>
-                            <li class="w3-padding-16">
-                                <h4>How does Wasatch LC help me get recruited?</h4>
-                                <p>
-                                    We upload highlight film from all of our games and scrimmages onto our website and
-                                    YouTube page.
-                                    Unlike most clubs, Wasatch LC keeps statistical records of its players. All of our
-                                    tournament stats are uploaded to our website.
-                                    We respond promptly to any college coaches who inquire about our players.
-                                    The coaches will write letters of reccomendation for players on our team for their
-                                    college search.
-                                    Players and parents can request our staff contact college coaches and help counsel
-                                    them through the college recruiting process.
-                                </p>
-                            </li>
-                            <li class="w3-padding-16">
-                                <h4>How often does Wasatch LC practice?</h4>
+                        <li class="w3-padding-16">
+                            <h4>How do I join Wasatch LC?</h4>
+                            <p>
+                                If you are interested in joining Wasatch Lacrosse Club, first please read our
+                                Mission Statement to confirm you are willing to abide by it if chosen to play with
+                                Wasatch LC.
+                                If so, contact our Coaching Staff with any information about your lacrosse career
+                                you can provide (accurate season stats, highlight or game film, coaches
+                                recommendations, etc.) and fill out our Player Information Sheet.
+                                Please email your Player Information Sheet and details about when Wasatch coaches
+                                can see you play to WasatchLC@gmail.com.
+                                The best ways for the coaches to watch you play is during the spring season or by
+                                sending us game film and/or highlights.
+                            </p>
+                        </li>
+                        <li class="w3-padding-16">
+                            <h4>Why play for Wasatch LC over other Club teams?</h4>
+                            <p>
+                                We have an amazing team culture. By surrounding elite players with other elite
+                                players, we believe that the overall skill and level of play is greatly elevated.
+                                With over 75 years of combined playing and coaching experience, our coaching staff
+                                coordinates our talent for success on the field and succes in college.
+                                We attend well nationally known tournaments and set up scrimmages against high-level
+                                competition. Each of our tournament games and scrimmages are filmed, and then we
+                                produce highlight videos to showcase our team, which are posted on to our YouTube
+                                page and the media page our website.
+                                Stats are also recorded from each game and posted on our website for easy access to
+                                players and college coaches.
+                            </p>
+                        </li>
+                        <li class="w3-padding-16">
+                            <h4>How does Wasatch LC help me get recruited?</h4>
+                            <p>
+                                We upload highlight film from all of our games and scrimmages onto our website and
+                                YouTube page.
+                                Unlike most clubs, Wasatch LC keeps statistical records of its players. All of our
+                                tournament stats are uploaded to our website.
+                                We respond promptly to any college coaches who inquire about our players.
+                                The coaches will write letters of reccomendation for players on our team for their
+                                college search.
+                                Players and parents can request our staff contact college coaches and help counsel
+                                them through the college recruiting process.
+                            </p>
+                        </li>
+                        <li class="w3-padding-16">
+                            <h4>How often does Wasatch LC practice?</h4>
+                            <div id="faq1">
                                 <p>
                                     During the Summer we have 8-10 practices and during the Fall we have 5-6 practices.
                                     Scrimmages may substitute for practices. Players are encouraged to play as often as
                                     possible.
                                 </p>
-                            </li>
-
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- FAQ End-->
-                <!-- Contact -->
-                <div class="w3-container" id="contact" style="margin-top:75px">
-                    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-                    <hr style="width:50px;border:5px solid red" class="w3-round">
-                    <p>Want to learn more?</p>
-                    <p>
-                        <p><a href="https://twitter.com/WasatchLC">Twitter - @WasatchLC</a></p>
-                        <p><a href="https://www.instagram.com/wasatchlc/" target="_blank">Instagram -
-                                @WasatchLC</a></p>
-                        <p><a href="https://www.facebook.com/wasatchlc/" target="_blank">Facebook -
-                                WasatchLC</a></p>
-                        <p>Email - WasatchLC@gmail.com</p>
-                    </p>
-                    <!-- <form action="/action_page.php" target="_blank">
+            </div>
+            <!-- FAQ End-->
+            <!-- Contact -->
+            <div class="w3-container" id="contact" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+                <hr style="width:50px;border:5px solid red" class="w3-round">
+                <p>Want to learn more?</p>
+                <p>
+                    <p><a href="https://twitter.com/WasatchLC">Twitter - @WasatchLC</a></p>
+                    <p><a href="https://www.instagram.com/wasatchlc/" target="_blank">Instagram -
+                            @WasatchLC</a></p>
+                    <p><a href="https://www.facebook.com/wasatchlc/" target="_blank">Facebook -
+                            WasatchLC</a></p>
+                    <p>Email - WasatchLC@gmail.com</p>
+                </p>
+                <!-- <form action="/action_page.php" target="_blank">
                         <div class="w3-section">
                             <label>Name</label>
                             <input class="w3-input w3-border" type="text" name="Name" required>
@@ -423,42 +367,51 @@
                         <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send
                             Message</button>
                     </form> -->
-                </div>
-                <!-- Contact End -->
-                <!-- End page content -->
             </div>
-            <!-- W3.CSS Container -->
-            <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-                <!-- Consider adding the mission statment information here-->
-                <p class="w3-right">Designed by Jarryd Stamatelos, Powered by <a
-                        href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                        class="w3-hover-opacity">w3.css</a>
-            </div>
+            <!-- Contact End -->
+            <!-- End page content -->
+        </div>
+        <!-- W3.CSS Container -->
+        <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+            <!-- Consider adding the mission statment information here-->
+            <p class="w3-right">Designed by Jarryd Stamatelos, Powered by <a
+                    href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                    class="w3-hover-opacity">w3.css</a>
+        </div>
 
-            <script>
-                // Script to open and close sidebar
-                function w3_open() {
-                    document.getElementById("mySidebar").style.display = "block";
-                    document.getElementById("myOverlay").style.display = "block";
-                }
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
 
-                function w3_close() {
-                    document.getElementById("mySidebar").style.display = "none";
-                    document.getElementById("myOverlay").style.display = "none";
-                }
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
 
-                // Modal Image Gallery
-                function onClick(element) {
-                    document.getElementById("img01").src = element.src;
-                    document.getElementById("modal01").style.display = "block";
-                    var captionText = document.getElementById("caption");
-                    captionText.innerHTML = element.alt;
-                }
-                function popUp() {
-                    window.alert('Coming Soon!')
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+            function popUp() {
+                window.alert('Coming Soon!')
 
+            }
+            function hideAndShow(div) {
+                const element = document.getElementById(div);
+                if (element.style.display === "none") {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
                 }
-            </script>
+            }
+
+        </script>
 
 </body>
 
