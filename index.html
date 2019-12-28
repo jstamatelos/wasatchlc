@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./resources/style/styles.css">
 
 <body>
@@ -13,36 +16,32 @@
     <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
         style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
-            style="width:100%;font-size:22px">Close Menu</a>
-        <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Wasatch<br>Lacrosse Club</b></h3>
-        </div>
+            style="width:100%;font-size:22px">x</a>
         <div class="w3-bar-block">
-            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
-            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Home</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">About</a>
             <a href="./resources/pages/commits.html" onclick="w3_close()"
-                class="w3-bar-item w3-button w3-hover-white">College Commits</a>
-            <a href="#coaches" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coaches</a>
+                class="w3-bar-item w3-button w3-hover-white" style="color: black;">College Commits</a>
+            <a href="#coaches" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Coaches</a>
             <a href="./resources/pages/roster.html" onclick="w3_close()"
-                class="w3-bar-item w3-button w3-hover-white">Roster</a>
+                class="w3-bar-item w3-button w3-hover-white" style="color: black;">Roster</a>
             <a href="./resources/pages/team.html" onclick="w3_close()"
-                class="w3-bar-item w3-button w3-hover-white">Teams</a>
+                class="w3-bar-item w3-button w3-hover-white" style="color: black;">Teams</a>
             <a href="./resources/pages/results.html" onclick="w3_close()"
-                class="w3-bar-item w3-button w3-hover-white">Tournament Results</a>
+                class="w3-bar-item w3-button w3-hover-white" style="color: black;">Tournament Results</a>
             <a href="./resources/pages/media.html" onclick="w3_close()"
-                class="w3-bar-item w3-button w3-hover-white">Media</a>
-            <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Testimonials</a>
-            <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQ</a>
+                class="w3-bar-item w3-button w3-hover-white" style="color: black;">Media</a>
+            <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Testimonials</a>
+            <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">FAQ</a>
             <a href="https://blatantteamstore.com/collections/wasatch-lacrosse-club-team-store" target="_blank"
-                onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team Store</a>
-            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+                onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Team Store</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Contact</a>
         </div>
     </nav>
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-        <span>Wasatch LC</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -54,14 +53,14 @@
 
         <!-- Mission -->
         <div class="w3-container" style="margin-top:80px" id="mission">
-            <h1 class="w3-jumbo"><b>Wasatch LC</b></h1>
+            <h4 class="w3-jumbo">Wasatch LC</h4>
         </div>
         <!-- Mission End -->
         <!-- Photo grid (modal) -->
         <div class="w3-row-padding">
             <div class="w3-full">
                 <img src="./resources/images/team/2019/team2019.one.jpeg" style="width:100%; padding:16px"
-                onclick="onClick(this)">
+                    onclick="onClick(this)">
                 <img src="./resources/images/team/2018/team.one.jpg" style="width:100%; padding:16px"
                     onclick="onClick(this)">
                 <img src="./resources/images/team/2018/team.two.jpg" style="width:100%; padding:16px"
@@ -127,8 +126,8 @@
                     <p>•At Westminster, he was a two-year starter at midfield and was voted by his teammates as Unsung Hero as a senior in 2009.</p>
                     <p>•Played locally at Olympus High School where he was a two-time All-State midfielder, All-Star, and captain.</p>
                     <p>•Won the Utah Men's Summer League Championship in 2016 with Team Wolf.</p>
-                    <p>•Works as a special education teacher at Hunter High School in West Valley City.</p>" style="width:100%"
-                        onclick="onClick(this)">
+                    <p>•Works as a special education teacher at Hunter High School in West Valley City.</p>"
+                        style="width:100%" onclick="onClick(this)">
                     <div class="w3-container">
                         <h3>Danny Larkin</h3>
                         <p class="w3-opacity">Director & HS Elite Co-Head Coach</p>
@@ -148,8 +147,8 @@
                     <p>•At Westminster, he was a two-year starter at attack, team captain, and led team in assists as a senior in 2009.</p>
                     <p>•Played locally at Olympus High School where he was a two-time All-State attackman, All-Star game MVP, and captain.</p>
                     <p>•Won the Utah Men's Summer League Championship in 2016 with Team Wolf.</p>
-                    <p>•Works as a special education teacher at Olympus High School in Holladay City.</p>" style="width:100%"
-                        onclick="onClick(this)">
+                    <p>•Works as a special education teacher at Olympus High School in Holladay City.</p>"
+                        style="width:100%" onclick="onClick(this)">
                     <div class="w3-container">
                         <h3>Ricky Larkin</h3>
                         <p class="w3-opacity">Director & HS Elite Co-Head Coach</p>
@@ -188,8 +187,8 @@
                     <img src="./resources/images/headshots/amos.headshot.jpg" alt="<p>•Former Assistant Coach at NCAA Division III SUNY Potsdam in Potsdam, NY and NCAA Division III Lyndon State College in Lyndonville, VT.</p>
                     <p>•Played collegiately at NCAA Division III SUNY Potsdam (NY) and NCAA Division III Clarkson University (NY).</p>
                     <p>•Played high school at St. Johnsbury Academy in VT, where he was a team captain and All-State defensemen as a senior.</p>
-                    <p>•Works as a geologist and engineer throughout Utah and the Western United States</p>" style="width:100%"
-                        onclick="onClick(this)">
+                    <p>•Works as a geologist and engineer throughout Utah and the Western United States</p>"
+                        style="width:100%" onclick="onClick(this)">
                     <div class="w3-container">
                         <h3>Amos Allard</h3>
                         <p class="w3-opacity">HS Elite Assitant Coach</p>
@@ -198,8 +197,9 @@
             </div>
             <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
-                    <img src="./resources/images/headshots/jarron.headshot.jpg" alt="<p>•Current Varsity Head Coach at Northridge High School in Layton, UT.</p>" style="width:100%"
-                        onclick="onClick(this)">
+                    <img src="./resources/images/headshots/jarron.headshot.jpg"
+                        alt="<p>•Current Varsity Head Coach at Northridge High School in Layton, UT.</p>"
+                        style="width:100%" onclick="onClick(this)">
                     <div class="w3-container">
                         <h3>Jarron Woodson</h3>
                         <p class="w3-opacity">HS Elite Assitant Coach</p>
@@ -238,37 +238,78 @@
                         <h4>Cliff Cole</h4>
                         <h5>"Leadership starts at the top of any organization..."</h5>
                         <p>
-                            As a parent, I appreciate the fact that Wasatch Lacrosse Club lives by and truly demonstrates their Philosophy (Promote the sport of lacrosse at a high level of competition and promote our players), Mission (Have individuals who are better people than they are lacrosse players) and Goals (Team recognition, player recognition, prepare for collegiate experience). Danny, Ricky and Adam are committed to growing the game of lacrosse and their low key coaching style contributes to the cohesion among their teams and players. It is rare that you see a highly competitive team that is comprised of a group of highly skilled players that are unselfish and supportive of each other.  The players selected to play on the Wasatch teams are outstanding individuals and players.
-                            Wasatch does an excellent job of recognizing and promoting their players and team on social media and other outlets.  Leadership starts at the top of any organization, including team sports. These guys have the complete package, excellent coaches who understand and love the game of lacrosse and also are great role models for their players.  Playing for Wasatch has been a great experience for my son, one that he will always remember.
+                            As a parent, I appreciate the fact that Wasatch Lacrosse Club lives by and truly
+                            demonstrates their Philosophy (Promote the sport of lacrosse at a high level of competition
+                            and promote our players), Mission (Have individuals who are better people than they are
+                            lacrosse players) and Goals (Team recognition, player recognition, prepare for collegiate
+                            experience). Danny, Ricky and Adam are committed to growing the game of lacrosse and their
+                            low key coaching style contributes to the cohesion among their teams and players. It is rare
+                            that you see a highly competitive team that is comprised of a group of highly skilled
+                            players that are unselfish and supportive of each other. The players selected to play on the
+                            Wasatch teams are outstanding individuals and players.
+                            Wasatch does an excellent job of recognizing and promoting their players and team on social
+                            media and other outlets. Leadership starts at the top of any organization, including team
+                            sports. These guys have the complete package, excellent coaches who understand and love the
+                            game of lacrosse and also are great role models for their players. Playing for Wasatch has
+                            been a great experience for my son, one that he will always remember.
                         </p>
                     </li>
                     <li class="w3-padding-16">
                         <h4>Aaron Harmston</h4>
                         <h5>"The coaches genuinely care about my son's development..."</h5>
                         <p>
-                            The thing that stands out the most about Wasatch LC is the way that the team is managed. The coaches genuinely care about my son's development and overall lacrosse experience. The culture within the program is the best that I've seen. The players room, eat and play together at tournaments which creates a strong sense of brotherhood. I've overheard several of them wanting to spend time together outside of lacrosse and those friendships are what make Wasatch LC such a unique experience. Parent communication is clear and concise and you always know well in advance what to expect. The coaching is done at a very high level. I've noticed a lot of improvement in my son's lacrosse IQ and stick skills.
-                            Wasatch LC also does a great job of promoting the players on social media and we've already started to receive a lot of recruiting interest. Thankfully, the coaches have also helped my family to navigate that process! If you're looking for a positive lacrosse experience for your son where he will receive top-notch coaching, increase his confidence, make a bunch of new friends and greatly improve his lacrosse game, then look no further than Wasatch LC.
+                            The thing that stands out the most about Wasatch LC is the way that the team is managed. The
+                            coaches genuinely care about my son's development and overall lacrosse experience. The
+                            culture within the program is the best that I've seen. The players room, eat and play
+                            together at tournaments which creates a strong sense of brotherhood. I've overheard several
+                            of them wanting to spend time together outside of lacrosse and those friendships are what
+                            make Wasatch LC such a unique experience. Parent communication is clear and concise and you
+                            always know well in advance what to expect. The coaching is done at a very high level. I've
+                            noticed a lot of improvement in my son's lacrosse IQ and stick skills.
+                            Wasatch LC also does a great job of promoting the players on social media and we've already
+                            started to receive a lot of recruiting interest. Thankfully, the coaches have also helped my
+                            family to navigate that process! If you're looking for a positive lacrosse experience for
+                            your son where he will receive top-notch coaching, increase his confidence, make a bunch of
+                            new friends and greatly improve his lacrosse game, then look no further than Wasatch LC.
                         </p>
                     </li>
                     <li class="w3-padding-16">
                         <h4>Mike Jones</h4>
                         <h5>"Wasatch LC has been the best decision by a landslide..."</h5>
                         <p>
-                            My son Christian has been playing lacrosse for over six years now and we have tried multiple club programs. I typically go and watch all of the practices and all of the games. I am able to evaluate the help he is getting and the progress he is making. Wasatch LC has been the best decision by a landslide. This club is very positive and very focused on the improvement and development of these boys. They are great about posting on social media and helping the boys get recruited and feel good about themselves during the process. They have always been very positive and their communication is very timely and proactive. You can tell that they do it because they love the sport and not just as a business opportunity.
+                            My son Christian has been playing lacrosse for over six years now and we have tried multiple
+                            club programs. I typically go and watch all of the practices and all of the games. I am able
+                            to evaluate the help he is getting and the progress he is making. Wasatch LC has been the
+                            best decision by a landslide. This club is very positive and very focused on the improvement
+                            and development of these boys. They are great about posting on social media and helping the
+                            boys get recruited and feel good about themselves during the process. They have always been
+                            very positive and their communication is very timely and proactive. You can tell that they
+                            do it because they love the sport and not just as a business opportunity.
                         </p>
                     </li>
                     <li class="w3-padding-16">
                         <h4>Matt Checketts</h4>
-                        <h5>"What impresses me the most about Wasatch is the way in which they promote forward thinking..."</h5>
+                        <h5>"What impresses me the most about Wasatch is the way in which they promote forward
+                            thinking..."</h5>
                         <p>
-                            My son has benefited greatly from his participation with Wasatch.  The coaching staff are not only motivational but descriptive and instructional.  Dylan is a kid who need's to understand how things work, Amos, Danny, Ricky and Adam all dedicated extensive time toward this end.  What impresses me the most about Wasatch is the way in which they promote forward thinking. If the team has a great game they acknowledge the success with a sound respect for looking ahead to the next game.  If the team struggles the coaches regroup and provide specific direction as to how the boys can improve.  Dylan will be playing college lacrosse this coming year, he worked hard to get there and Wasatch worked right alongside him.
+                            My son has benefited greatly from his participation with Wasatch. The coaching staff are not
+                            only motivational but descriptive and instructional. Dylan is a kid who need's to understand
+                            how things work, Amos, Danny, Ricky and Adam all dedicated extensive time toward this end.
+                            What impresses me the most about Wasatch is the way in which they promote forward thinking.
+                            If the team has a great game they acknowledge the success with a sound respect for looking
+                            ahead to the next game. If the team struggles the coaches regroup and provide specific
+                            direction as to how the boys can improve. Dylan will be playing college lacrosse this coming
+                            year, he worked hard to get there and Wasatch worked right alongside him.
                         </p>
                     </li>
                     <li class="w3-padding-16">
                         <h4>Rebekka Hall</h4>
                         <h5>"I am impressed with Wasatch LC’s organization and consistent communication..."</h5>
                         <p>
-                            I am impressed with Wasatch LC’s organization and consistent communication. They are responsive and willing to answer questions! Game film is available in a timely manner and they provide details about travel, cost, and tournaments in such a way that allows for advanced planning. 
+                            I am impressed with Wasatch LC’s organization and consistent communication. They are
+                            responsive and willing to answer questions! Game film is available in a timely manner and
+                            they provide details about travel, cost, and tournaments in such a way that allows for
+                            advanced planning.
                         </p>
                     </li>
                 </ul>
@@ -299,29 +340,45 @@
 
                         <li class="w3-padding-16">
                             <h4>How much does it cost to play for the Wasatch LC?</h4>
-                            <p>• Ski Town Shootout - $250 (includes team fees, tournament fee, practices, scrimmages, and coaches)</p>
-                            <p>• U19 Vail Lacrosse Shootout - $675 (includes hotel (four nights), food (all meals from Sunday breakfast to Wednesday breakfast), tournament fee, practices, scrimmages, and coaches. NOT INCLUDED: transportation to/from Vail)</p>
-                            <p>• North East Showdown, Lax Federation Members Cup, and Summer Inside Lacrosse Recruiting Invitational- $1750
-                                (includes team fees, three high-level recruiting tournaments, exposure to 100+ college coaches, hotel & accommodations for 8 nights, all meals, van rental/transportation in New Jersey/Maryland, gas, practices, scrimmages and coaches. NOT INCLUDED: Airfare)
+                            <p>• Ski Town Shootout - $250 (includes team fees, tournament fee, practices, scrimmages,
+                                and coaches)</p>
+                            <p>• U19 Vail Lacrosse Shootout - $675 (includes hotel (four nights), food (all meals from
+                                Sunday breakfast to Wednesday breakfast), tournament fee, practices, scrimmages, and
+                                coaches. NOT INCLUDED: transportation to/from Vail)</p>
+                            <p>• North East Showdown, Lax Federation Members Cup, and Summer Inside Lacrosse Recruiting
+                                Invitational- $1750
+                                (includes team fees, three high-level recruiting tournaments, exposure to 100+ college
+                                coaches, hotel & accommodations for 8 nights, all meals, van rental/transportation in
+                                New Jersey/Maryland, gas, practices, scrimmages and coaches. NOT INCLUDED: Airfare)
                             </p>
                         </li>
                         <li class="w3-padding-16">
                             <h4>How do I join Wasatch LC?</h4>
                             <p>
-                                If you are interested in joining Wasatch Lacrosse Club, the best ways for the coaches to watch you play is at TRYOUTS or by sending us game film and/or highlights.
-                                Please contact our coaching staff with any information about your lacrosse career you can provide (accurate season stats, highlight or game film, coaches recommendations, etc.) and fill out our Player Information Sheet.
-                                Email your Player Information Sheet and any other information about yourself to WasatchLC@gmail.com.
+                                If you are interested in joining Wasatch Lacrosse Club, the best ways for the coaches to
+                                watch you play is at TRYOUTS or by sending us game film and/or highlights.
+                                Please contact our coaching staff with any information about your lacrosse career you
+                                can provide (accurate season stats, highlight or game film, coaches recommendations,
+                                etc.) and fill out our Player Information Sheet.
+                                Email your Player Information Sheet and any other information about yourself to
+                                WasatchLC@gmail.com.
                             </p>
                         </li>
                         <li class="w3-padding-16">
                             <h4>How does Wasatch LC help me get recruited?</h4>
                             <p>
-                                Wasatch LC competes in some of the top recruiting tournaments in New Jersey and Maryland against club teams that are well known to college coaches all over the country.
-                                The Wasatch LC staff film every game and scrimmage, and then provide that full length game film to our players and the public within 48 hours via our YouTube channel.
-                                Staff produces highlight videos for each game that are uploaded within two weeks onto YouTube. Our team Instagram page boasts over 8,000 followers, which includes hundreds of college coaches.
-                                Pictures and/or videos are posted daily onto our Instagram page to help maximize players' exposure.
+                                Wasatch LC competes in some of the top recruiting tournaments in New Jersey and Maryland
+                                against club teams that are well known to college coaches all over the country.
+                                The Wasatch LC staff film every game and scrimmage, and then provide that full length
+                                game film to our players and the public within 48 hours via our YouTube channel.
+                                Staff produces highlight videos for each game that are uploaded within two weeks onto
+                                YouTube. Our team Instagram page boasts over 8,000 followers, which includes hundreds of
+                                college coaches.
+                                Pictures and/or videos are posted daily onto our Instagram page to help maximize
+                                players' exposure.
                                 We help counsel our players and parents throughout the college recruiting process.
-                                Our coaches will email any college coaching staff and write letters of recommendation for the players on our team.
+                                Our coaches will email any college coaching staff and write letters of recommendation
+                                for the players on our team.
                             </p>
                         </li>
                         <li class="w3-padding-16">
@@ -344,7 +401,8 @@
                 <hr style="width:50px;border:5px solid red" class="w3-round">
                 <p>Want to learn more?</p>
                 <p>
-                    <a href="mailto:dannylarkin15@gmail.com;rickylarkin@hotmail.com;wasatchLC@gmail.com">Click Here To Email Our Directors</a>
+                    <a href="mailto:dannylarkin15@gmail.com;rickylarkin@hotmail.com;wasatchLC@gmail.com">Click Here To
+                        Email Our Directors</a>
                 </p>
                 <p>
                     Reach out on social media:

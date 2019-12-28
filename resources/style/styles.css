@@ -2,10 +2,20 @@ body,
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
-    font-family: "Poppins", sans-serif
+    font-family: 'Oswald', sans-serif;
+    color: red;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: red;
+}
+
+p {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: red;
 }
 
 span {
@@ -14,7 +24,7 @@ span {
 
 body {
     font-size: 16px;
-    background-color: lightgray;
+    background-color: black;
 }
 
 .w3-half img {
