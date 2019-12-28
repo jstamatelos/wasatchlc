@@ -5,17 +5,16 @@ h3,
 h5,
 h6 {
     font-family: 'Oswald', sans-serif;
-    color: red;
+    color: black;
 }
 
 h4 {
     font-family: 'Oswald', sans-serif;
-    color: red;
+    color: black;
 }
 
 p {
     font-family: 'Noto Sans TC', sans-serif;
-    color: red;
 }
 
 span {
@@ -24,7 +23,7 @@ span {
 
 body {
     font-size: 16px;
-    background-color: black;
+    background-color: rgb(133, 130, 130);
 }
 
 .w3-half img {
