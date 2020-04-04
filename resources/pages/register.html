@@ -45,20 +45,139 @@
         </div>
         <!-- Registration -->
         <div class="w3-container" id="registration" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-black"><b>Register.</b></h1>
+            <h1 class="w3-xxxlarge w3-text-black"><b>Tournaments.</b></h1>
+            <div class="w3-full">
+                <div>
+                    <img src="../images/register/invitational-2020.jpg" style="width:100%"></a>
+                </div>
+            </div>
             <hr style="width:50px;border:5px solid yellow" class="w3-round">
             <form class="w3-container" name="registrationForm">
+                <p>DATES: October 10-11th, 2020</p>
+                <p>LOCATION: Sugar House Park (1330 E 2100 S, Salt Lake City, UT, 84106)</p>
+                <p>COST: $1500 per team - *Multiple Team Discount - $100 off team registration*DIVISIONS: Boys HS Elite
+                    (2021-2024) & Boys HS Rising (2021-2024)</p>
+                <p>FORMAT: 5 Games Guaranteed; Championship format</p>
+                <p>RULES: NHFS rules, 22-minute running halves, 3 minute halftime, NO timeouts</p>
+                <p>College Coaches in Attendance from NCAA D1, D2, & D3; MCLA D1 & D2; NAIA</p>
+                <p>CONTACT: wasatchlc@gmail.com; OR Danny Larkin at (801) 703-6734</p>
+                <p>REGISTRATION: Players click here to register for Wasatch Invitational</p>
+
+                <h1 class="w3-xxxlarge w3-text-black"><b>Tryouts.</b></h1>
+                <div class="w3-full">
+                    <div>
+                        <img src="../images/register/tryouts.jpg" style="width:100%"></a>
+                    </div>
+                </div>
                 <form>
-                    <p><label for="first_name">First Name:</label>
+                    <!-- Tournament Radio Group -->
+                    <p><input type="radio" name="whichTournament" value="elite"> Wasatch Invitational - High School
+                        ELITE Division
+                        October 12th-13th, 2019 </p>
+                    <p><input type="radio" name="whichTournament" value="rising"> Wasatch Invitational - High School
+                        RISING Division
+                        October 12th-13th, 2019 </p>
+                    <!-- Tournament Radio Group End -->
+
+                    <!-- Player Options-->
+                    <p><label for="first_name">Player First Name:</label>
                         <input type="text" name="first_name" id="firstName" required></p>
 
-                    <p><label for="last_name">Last Name:</label>
+                    <p><label for="last_name">Player Last Name:</label>
                         <input type="text" name="last_name" id="lastName" required></p>
 
-                    <p><label for="email">Email:</label>
-                        <input type="email" name="email" id="email" required></p>
-                    <input value="Submit" type="submit" onclick="post()">
+                    <p><label for="email">Player Email:</label>
+                        <input type="email" name="player_email" id="email" required></p>
 
+                    <p><label for="player_phone_number">Player Phone Number:</label>
+                        <input type="tel" name="player_phone_number" id="playerPhoneNumber" required></p>
+
+                    <p><label for="player_address_street">Player Address Street:</label>
+                        <input type="text" name="player_address_street" id="playerAddressStreet" required></p>
+
+                    <p><label for="player_address_city">Player Address City:</label>
+                        <input type="text" name="player_address_city" id="playerAddressCity" required></p>
+
+                    <p><label for="player_address_zip">Player Address Zip Code:</label>
+                        <input type="text" name="player_address_zip" id="playerAddressZip" required></p>
+
+                    <p><label for="player_usLacrosse_number">Player US Lacrosse Number:</label>
+                        <input type="text" name="player_usLacrosse_number" id="usLacrosseNumber" required></p>
+
+                    <!-- Player Options Position Radio Group -->
+                    <p>Position: </p>
+                    <p><input type="radio" name="positions" value="attack"> Attack</p>
+                    <p><input type="radio" name="positions" value="midfield"> Midfield</p>
+                    <p><input type="radio" name="positions" value="lsm"> Long Stick Midfield</p>
+                    <p><input type="radio" name="positions" value="defense"> Defense</p>
+                    <p><input type="radio" name="positions" value="goalie"> Goalie</p>
+                    <!-- Player Options Position Radio Group End -->
+
+                    <!-- Player Options Team Selection Radio Group -->
+                    <p>Team: </p>
+                    <select id="teamSelection">
+                        <option value="Team one"> Team one</option>
+                        <option value="Team two"> Team two</option>
+                        <option value="Team three"> Team three</option>
+                    </select>
+                    <!-- Player Options Team Selection Radio Group End -->
+
+                    <!-- Player Options Grad year Selection Radio Group -->
+                    <p>Graduation Year: </p>
+                    <select id="gradYearSelection">
+                        <option value="2020"> 2020</option>
+                        <option value="2021"> 2021</option>
+                        <option value="2022"> 2022</option>
+                        <option value="2023"> 2023</option>
+                        <option value="2024"> 2024</option>
+                    </select>
+                    <!-- Player Options Grad Year Selection Radio Group End -->
+
+                    <!-- Player Options Experience Selection Radio Group -->
+                    <p>Player Experience: </p>
+                    <select id="experienceSelection">
+                        <option value="none"> Never Player</option>
+                        <option value="beginner"> Beginner</option>
+                        <option value="intermediate"> Intermediate</option>
+                        <option value="advanced"> Advanced</option>
+                    </select>
+                    <!-- Player Options Experience Selection Radio Group End -->
+
+                    <!-- Player Options High School Selection Radio Group -->
+                    <p>Graduation Year: </p>
+                    <select id="highSchoolSelection">
+                        <option value="School One"> School One</option>
+                        <option value="School Two"> School Two</option>
+                        <option value="School Three"> School Three</option>
+                    </select>
+                    <!-- Player Options High School Selection Radio Group End -->                    
+            
+                    <!-- Player Options End-->
+
+                    <!-- Parent Options -->
+                    <p><label for="first_name"> Parent First Name:</label>
+                        <input type="text" name="parent_first_name" id="parentFirstName" required></p>
+
+                    <p><label for="last_name">Parent Last Name:</label>
+                        <input type="text" name="parent_last_name" id="parentLastName" required></p>
+
+                    <p><label for="parent_email">Parent Email:</label>
+                        <input type="email" name="parent_email" id="parentEmail" required></p>
+                    
+                    <p><label for="parent_phone_number"> Parent Phone Number:</label>
+                        <input type="tel" name="parent_phone_number" id="parentPhoneNumber" required></p>
+
+                    <p><label for="parent_address_street">Parent Address Street:</label>
+                        <input type="text" name="parent_address_street" id="parentAddressStreet" required></p>
+
+                    <p><label for="parent_address_city">Parent Address City:</label>
+                        <input type="text" name="parent_address_city" id="parentAddressCity" required></p>
+
+                    <p><label for="parent_address_zip">Parent Address Zip:</label>
+                        <input type="text" name="parent_address_zip" id="parentAddressZip" required></p>
+                    <!-- Parent Options End -->
+
+                    <input value="Submit" type="submit" onclick="post()">
                 </form>
         </div>
         <!-- Registration End -->
@@ -74,22 +193,76 @@
     </div>
 
     <script>
+        function getDropDownSelection(element) {
+            const e = document.getElementById(element);
+            const value = e.options[e.selectedIndex].value;
+            return value
+        }
+        
+        function getTournamentSelection() {
+            const selections = []
+            const ele = document.getElementsByName("whichTournament");
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked) {
+                    selection = ele[i].value
+                    selections.push(selection)
+                }
+            }
+            return selections[0]
+        }
+        function getPositionSelection() {
+            const selections = []
+            const ele = document.getElementsByName("positions");
+            for (i = 0; i < ele.length; i++) {
+                if (ele[i].checked) {
+                    selection = ele[i].value
+                    selections.push(selection)
+                }
+            }
+            return selections[0]
+        }
         function post() {
             const xhttp = new XMLHttpRequest();
-            const first = document.getElementById('firstName').value
-            const last = document.getElementById('lastName').value
-            const userEmail = document.getElementById('email').value
+            const first = document.getElementById("firstName").value
+            const last = document.getElementById("lastName").value
+            const registrantEmail = document.getElementById("email").value
+            const gradYear = getDropDownSelection("gradYearSelection")
+            const tournamentSelection = getTournamentSelection()
+            const experience = getDropDownSelection("experienceSelection")
+            const position = getPositionSelection()
+            const school = getDropDownSelection("highSchoolSelection")
+            const team = getDropDownSelection("teamSelection")
+            const parentFirstName = document.getElementById("parentFirstName").value
+            const parentLastName = document.getElementById("parentLastName").value
+            const parentEmail = document.getElementById("parentEmail").value
+            const parentPhoneNumber = document.getElementById("parentPhoneNumber").value
+            const parentAddressStreet = document.getElementById("parentAddressStreet").value
+            const parentAddressCity = document.getElementById("parentAddressCity").value
+            const parentAddressZip = document.getElementById("parentAddressZip").value
             const formData = {
                 firstName: first,
                 lastName: last,
-                registrantEmail: userEmail
+                registrantEmail: registrantEmail,
+                tournament: tournamentSelection,
+                teamSelection: team,
+                graduationYear: gradYear,
+                experienceLevel: experience,
+                playerPostion: position,
+                highSchool: school,
+                parentFirstName: parentFirstName,
+                parentLastName: parentLastName,
+                parentEmail: parentEmail,
+                parentPhoneNumber: parentPhoneNumber,
+                parentAddressStreet: parentAddressStreet,
+                parentAddressCity: parentAddressCity,
+                parentAddressZip: parentAddressZip
             }
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     console.log(this.responseText)
                 }
             }
-            xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+            xhttp.open("POST", 'http://localhost:3000/register/test')
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
             xhttp.setRequestHeader("Accept", "application/json")
             xhttp.send(JSON.stringify(formData))
@@ -116,7 +289,6 @@
         }
         function popUp() {
             window.alert('Coming Soon!')
-
         }
     </script>
 
