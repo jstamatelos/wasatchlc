@@ -20,6 +20,7 @@
         <div class="w3-bar-block">
             <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Home</a>
             <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">About</a>
+            <a href="./resources/pages/register.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Registration</a>
             <a href="./resources/pages/commits.html" onclick="w3_close()"
                 class="w3-bar-item w3-button w3-hover-white" style="color: black;">College Commits</a>
             <a href="#coaches" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color: black;">Coaches</a>
@@ -86,6 +87,7 @@
                 <p id="caption"></p>
             </div>
         </div>
+        
 
         <!-- About -->
         <div class="w3-container" id="about" style="margin-top:75px">
@@ -456,34 +458,33 @@
         </div>
 
         <script>
-            // Script to open and close sidebar
             function w3_open() {
-                document.getElementById("mySidebar").style.display = "block";
-                document.getElementById("myOverlay").style.display = "block";
+                document.getElementById("mySidebar").style.display = "block"
+                document.getElementById("myOverlay").style.display = "block"
             }
 
             function w3_close() {
-                document.getElementById("mySidebar").style.display = "none";
-                document.getElementById("myOverlay").style.display = "none";
+                document.getElementById("mySidebar").style.display = "none"
+                document.getElementById("myOverlay").style.display = "none"
             }
 
             // Modal Image Gallery
             function onClick(element) {
-                document.getElementById("img01").src = element.src;
-                document.getElementById("modal01").style.display = "block";
-                var captionText = document.getElementById("caption");
-                captionText.innerHTML = element.alt;
+                document.getElementById("img01").src = element.src
+                document.getElementById("modal01").style.display = "block"
+                var captionText = document.getElementById("caption")
+                captionText.innerHTML = element.alt
             }
             function popUp() {
                 window.alert('Coming Soon!')
 
             }
             function hideAndShow(div) {
-                const element = document.getElementById(div);
+                const element = document.getElementById(div)
                 if (element.style.display === "none") {
-                    element.style.display = "block";
+                    element.style.display = "block"
                 } else {
-                    element.style.display = "none";
+                    element.style.display = "none"
                 }
             }
 

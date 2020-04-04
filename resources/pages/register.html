@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Registration</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../style/styles.css">
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-yellow w3-collapse w3-top w3-large w3-padding"
+        style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px">x</a>
+        <div class="w3-bar-block">
+            <a href="../../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"
+                style="color: black;">Home</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-yellow w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-yellow w3-margin-right" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">Close Menu</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+        <!-- Registration -->
+        <div class="w3-container" id="registration" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-black"><b>Register.</b></h1>
+            <hr style="width:50px;border:5px solid yellow" class="w3-round">
+            <form class="w3-container" name="registrationForm">
+                <form>
+                    <p><label for="first_name">First Name:</label>
+                        <input type="text" name="first_name" id="firstName" required></p>
+
+                    <p><label for="last_name">Last Name:</label>
+                        <input type="text" name="last_name" id="lastName" required></p>
+
+                    <p><label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required></p>
+                    <input value="Submit" type="submit" onclick="post()">
+
+                </form>
+        </div>
+        <!-- Registration End -->
+
+        <!-- End page content -->
+    </div>
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <!-- Consider adding the mission statment information here-->
+        <p class="w3-right">Designed by Jarryd Stamatelos, Powered by <a
+                href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-opacity">w3.css</a>
+    </div>
+
+    <script>
+        function post() {
+            const xhttp = new XMLHttpRequest();
+            const first = document.getElementById('firstName').value
+            const last = document.getElementById('lastName').value
+            const userEmail = document.getElementById('email').value
+            const formData = {
+                firstName: first,
+                lastName: last,
+                registrantEmail: userEmail
+            }
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText)
+                }
+            }
+            xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
+            xhttp.setRequestHeader("Accept", "application/json")
+            xhttp.send(JSON.stringify(formData))
+            const form = document.getElementsByName('registrationForm')[0];
+            form.reset()
+        }
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+        function popUp() {
+            window.alert('Coming Soon!')
+
+        }
+    </script>
+
+</body>
+
+</html>
