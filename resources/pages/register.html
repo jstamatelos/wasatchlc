@@ -104,53 +104,60 @@
                     <p><label for="player_usLacrosse_number">Player US Lacrosse Number:</label>
                         <input class="w3-input" type="text" name="player_usLacrosse_number" id="usLacrosseNumber" required></p>
 
-                    <!-- Player Options Position Radio Group -->
+                    <!-- Player Options Position Drop Down Group -->
                     <p>Position: </p>
-                    <p><input type="radio" name="positions" value="attack"> Attack</p>
-                    <p><input type="radio" name="positions" value="midfield"> Midfield</p>
-                    <p><input type="radio" name="positions" value="lsm"> Long Stick Midfield</p>
-                    <p><input type="radio" name="positions" value="defense"> Defense</p>
-                    <p><input type="radio" name="positions" value="goalie"> Goalie</p>
-                    <!-- Player Options Position Radio Group End -->
+                    <select id="positions">
+                        <option value=""></option>
+                        <option value="attack"> Attack</option>
+                        <option value="midfield"> Midfield</option>
+                        <option value="long stick midfield"> Long Stick Midfield</option>
+                        <option value="defense"> Defense</option>
+                        <option value="goalie"> Goalie</option>
+                    </select>
+                    <!-- Player Options Position Drop Down Group End -->
 
-                    <!-- Player Options Team Selection Radio Group -->
+                    <!-- Player Options Team Selection Drop Down Group -->
                     <p>Team: </p>
                     <select id="teamSelection">
+                        <option value=""></option>
                         <option value="Team one"> Team one</option>
                         <option value="Team two"> Team two</option>
                         <option value="Team three"> Team three</option>
                     </select>
-                    <!-- Player Options Team Selection Radio Group End -->
+                    <!-- Player Options Team Selection Drop Down Group End -->
 
-                    <!-- Player Options Grad year Selection Radio Group -->
+                    <!-- Player Options Grad year Selection Drop Down Group -->
                     <p>Graduation Year: </p>
                     <select id="gradYearSelection">
+                        <option value=""></option>
                         <option value="2020"> 2020</option>
                         <option value="2021"> 2021</option>
                         <option value="2022"> 2022</option>
                         <option value="2023"> 2023</option>
                         <option value="2024"> 2024</option>
                     </select>
-                    <!-- Player Options Grad Year Selection Radio Group End -->
+                    <!-- Player Options Grad Year Selection Drop Down Group End -->
 
-                    <!-- Player Options Experience Selection Radio Group -->
+                    <!-- Player Options Experience Selection Drop Down Group -->
                     <p>Player Experience: </p>
                     <select id="experienceSelection">
+                        <option value=""></option>
                         <option value="none"> Never Player</option>
                         <option value="beginner"> Beginner</option>
                         <option value="intermediate"> Intermediate</option>
                         <option value="advanced"> Advanced</option>
                     </select>
-                    <!-- Player Options Experience Selection Radio Group End -->
+                    <!-- Player Options Experience Selection Drop Down Group End -->
 
-                    <!-- Player Options High School Selection Radio Group -->
+                    <!-- Player Options High School Selection Drop Down Group -->
                     <p>Graduation Year: </p>
                     <select id="highSchoolSelection">
+                        <option value=""></option>
                         <option value="School One"> School One</option>
                         <option value="School Two"> School Two</option>
                         <option value="School Three"> School Three</option>
                     </select>
-                    <!-- Player Options High School Selection Radio Group End -->                    
+                    <!-- Player Options High School Selection Drop Down Group End -->                    
             
                     <!-- Player Options End-->
 
@@ -210,28 +217,24 @@
             }
             return selections[0]
         }
-        function getPositionSelection() {
-            const selections = []
-            const ele = document.getElementsByName("positions");
-            for (i = 0; i < ele.length; i++) {
-                if (ele[i].checked) {
-                    selection = ele[i].value
-                    selections.push(selection)
-                }
-            }
-            return selections[0]
-        }
         function post() {
             const xhttp = new XMLHttpRequest();
+            // player info
             const first = document.getElementById("firstName").value
             const last = document.getElementById("lastName").value
             const registrantEmail = document.getElementById("email").value
             const gradYear = getDropDownSelection("gradYearSelection")
             const tournamentSelection = getTournamentSelection()
             const experience = getDropDownSelection("experienceSelection")
-            const position = getPositionSelection()
+            const position = getDropDownSelection("positions")
             const school = getDropDownSelection("highSchoolSelection")
             const team = getDropDownSelection("teamSelection")
+            const playerPhone = document.getElementById("playerPhoneNumber").value
+            const playerAddressStreet = document.getElementById("playerAddressStreet").value
+            const playerAddressCity = document.getElementById("playerAddressCity").value
+            const playerAddressZip = document.getElementById("playerAddressZip").value
+            const usLacrosseNumber = document.getElementById("usLacrosseNumber").value
+            // parent info
             const parentFirstName = document.getElementById("parentFirstName").value
             const parentLastName = document.getElementById("parentLastName").value
             const parentEmail = document.getElementById("parentEmail").value
@@ -244,10 +247,15 @@
                 lastName: last,
                 registrantEmail: registrantEmail,
                 tournament: tournamentSelection,
+                playerPhoneNumber: playerPhone,
+                playerAddressStreet: playerAddressStreet,
+                playerAddressCity: playerAddressCity,
+                playerAddressZip: playerAddressZip,
+                usLacrosseNumber: usLacrosseNumber,
+                playerPostion: position,
                 teamSelection: team,
                 graduationYear: gradYear,
                 experienceLevel: experience,
-                playerPostion: position,
                 highSchool: school,
                 parentFirstName: parentFirstName,
                 parentLastName: parentLastName,
@@ -258,8 +266,8 @@
                 parentAddressZip: parentAddressZip
             }
             xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    console.log(this.status)   
+                if (this.readyState === 4 && this.status === 200) {
+                    console.log(this.status)
                 }
             }
             xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
