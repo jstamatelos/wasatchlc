@@ -71,13 +71,15 @@
                 </div>
                 <form class="w3-container">
                     <!-- Tournament Radio Group -->
-                    <p><input type="radio" name="whichTournament" value="elite"> Wasatch Invitational - High School
-                        ELITE Division
-                        October 12th-13th, 2019 </p>
-                    <p><input type="radio" name="whichTournament" value="rising"> Wasatch Invitational - High School
-                        RISING Division
-                        October 12th-13th, 2019 </p>
-                    <!-- Tournament Radio Group End -->
+                                        <!-- Player Options Position Drop Down Group -->
+                                        <p>Tournament: </p>
+                                        <select id="whichTournament">
+                                            <option value=""></option>
+                                            <option value="elite"> High School
+                                                ELITE Division</option>
+                                                <option value="rising"> High School
+                                                    RISING Division</option>
+                                        </select>
 
                     <!-- Player Options-->
                     <p><label for="first_name">Player First Name:</label>
@@ -224,7 +226,7 @@
             const last = document.getElementById("lastName").value
             const registrantEmail = document.getElementById("email").value
             const gradYear = getDropDownSelection("gradYearSelection")
-            const tournamentSelection = getTournamentSelection()
+            const tournamentSelection = getDropDownSelection("whichTournament")
             const experience = getDropDownSelection("experienceSelection")
             const position = getDropDownSelection("positions")
             const school = getDropDownSelection("highSchoolSelection")
@@ -271,17 +273,13 @@
                 }
             }
             xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+            xhttp.open("POST", 'http://localhost:3000/register')
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
             xhttp.setRequestHeader("Accept", "application/json")
-            console.log(formData)
-            const response = xhttp.send(JSON.stringify(formData))
-            const headers = xhttp.getAllResponseHeaders()
-            var form = document.getElementById("registrationForm");
-            function handleForm(event) { event.preventDefault(); } 
-            form.addEventListener('submit', handleForm);
+            xhttp.send(JSON.stringify(formData))
 
-            // const form = document.getElementsByName('registrationForm')[0];
-            // form.reset()
+            const form = document.getElementsByName('registrationForm')[0];
+            form.reset()
         }
         // Script to open and close sidebar
         function w3_open() {
