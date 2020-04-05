@@ -52,7 +52,7 @@
                 </div>
             </div>
             <hr style="width:50px;border:5px solid yellow" class="w3-round">
-            <form class="w3-container" name="registrationForm">
+            <form class="w3-container" id= "registrationForm" name="registrationForm">
                 <p>DATES: October 10-11th, 2020</p>
                 <p>LOCATION: Sugar House Park (1330 E 2100 S, Salt Lake City, UT, 84106)</p>
                 <p>COST: $1500 per team - *Multiple Team Discount - $100 off team registration*DIVISIONS: Boys HS Elite
@@ -255,7 +255,7 @@
                 playerPostion: position,
                 teamSelection: team,
                 graduationYear: gradYear,
-                experienceLevel: experience,
+                expLevel: experience,
                 highSchool: school,
                 parentFirstName: parentFirstName,
                 parentLastName: parentLastName,
@@ -273,7 +273,13 @@
             xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
             xhttp.setRequestHeader("Accept", "application/json")
-            xhttp.send(JSON.stringify(formData))
+            console.log(formData)
+            const response = xhttp.send(JSON.stringify(formData))
+            const headers = xhttp.getAllResponseHeaders()
+            var form = document.getElementById("registrationForm");
+            function handleForm(event) { event.preventDefault(); } 
+            form.addEventListener('submit', handleForm);
+
             // const form = document.getElementsByName('registrationForm')[0];
             // form.reset()
         }
