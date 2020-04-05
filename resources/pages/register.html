@@ -273,16 +273,11 @@
                 }
             }
             xhttp.open("POST", 'https://wasatch-server.herokuapp.com/register')
+            // xhttp.open("POST", 'http://localhost:3000/register')
+
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
             xhttp.setRequestHeader("Accept", "application/json")
             xhttp.send(JSON.stringify(formData))
-            xhttp.onreadystatechange = function () {
-                if (this.readyState === 4 && this.status === 200) {
-                    const form = document.getElementsByName('registrationForm')[0];
-                    form.reset()
-                }
-            }
-
         }
         // Script to open and close sidebar
         function w3_open() {
