@@ -52,28 +52,22 @@
                 </div>
             </div>
             <hr style="width:50px;border:5px solid yellow" class="w3-round">
-            <form class="w3-container" id= "registrationForm" name="registrationForm">
-                <p>DATES: October 10-11th, 2020</p>
-                <p>LOCATION: Sugar House Park (1330 E 2100 S, Salt Lake City, UT, 84106)</p>
-                <p>COST: $1500 per team - *Multiple Team Discount - $100 off team registration*DIVISIONS: Boys HS Elite
-                    (2021-2024) & Boys HS Rising (2021-2024)</p>
-                <p>FORMAT: 5 Games Guaranteed; Championship format</p>
-                <p>RULES: NHFS rules, 22-minute running halves, 3 minute halftime, NO timeouts</p>
-                <p>College Coaches in Attendance from NCAA D1, D2, & D3; MCLA D1 & D2; NAIA</p>
-                <p>CONTACT: wasatchlc@gmail.com; OR Danny Larkin at (801) 703-6734</p>
-                <p>REGISTRATION: Players click here to register for Wasatch Invitational</p>
+            <p>DATES: October 10-11th, 2020</p>
+            <p>LOCATION: Sugar House Park (1330 E 2100 S, Salt Lake City, UT, 84106)</p>
+            <p>COST: $1500 per team - *Multiple Team Discount - $100 off team registration*DIVISIONS: Boys HS Elite
+                (2021-2024) & Boys HS Rising (2021-2024)</p>
+            <p>FORMAT: 5 Games Guaranteed; Championship format</p>
+            <p>RULES: NHFS rules, 22-minute running halves, 3 minute halftime, NO timeouts</p>
+            <p>College Coaches in Attendance from NCAA D1, D2, & D3; MCLA D1 & D2; NAIA</p>
+            <p>CONTACT: wasatchlc@gmail.com; OR Danny Larkin at (801) 703-6734</p>
+            <p>REGISTRATION: Players click here to register for Wasatch Invitational</p>
 
-                <h1 class="w3-xxxlarge w3-text-black"><b>Tryouts.</b></h1>
-                <div class="w3-full">
-                    <div>
-                        <img src="../images/register/tryouts.jpg" style="width:100%"></a>
-                    </div>
-                </div>
-                <form class="w3-container">
-                    <!-- Tournament Radio Group -->
-                    <!-- Player Options Position Drop Down Group -->
-                    <p><label for="which_tournament">Register for:</label><br>
-                    <select id="whichTournament">
+            <h1 class="w3-xxxlarge w3-text-black"><b>Tryouts.</b></h1>
+            <form class="w3-container" id= "registrationForm" name="registrationForm">
+                <!-- Tournament Radio Group -->
+                <!-- Player Options Position Drop Down Group -->
+                <p><label for="which_tournament">Register for:</label>
+                    <select id="whichTournament" required>
                         <option value=""></option>
                         <option value="boys_aug_15">Boys Tryouts - August 15, 2021</option>
                         <option value="boys_aug_22">Boys Tryouts - August 22, 2021</option>
@@ -82,33 +76,33 @@
                     </select>
 
                     <!-- Player Options-->
-                    <p><label for="first_name">Player First Name:</label>
-                        <input class="w3-input" type="text" name="first_name" id="firstName"></p>
+                <p><label for="first_name">Player First Name:</label>
+                    <input class="w3-input" type="text" name="first_name" id="firstName" required></p>
 
-                    <p><label for="last_name">Player Last Name:</label>
-                        <input class="w3-input" type="text" name="last_name" id="lastName"></p>
+                <p><label for="last_name">Player Last Name:</label>
+                    <input class="w3-input" type="text" name="last_name" id="lastName" required></p>
 
-                    <p><label for="email">Player Email:</label>
-                        <input class="w3-input" type="email" name="player_email" id="email"></p>
+                <p><label for="email">Player Email:</label>
+                    <input class="w3-input" type="email" name="player_email" id="email" required></p>
 
-                    <p><label for="player_phone_number">Player Phone Number:</label>
-                        <input class="w3-input" type="tel" name="player_phone_number" id="playerPhoneNumber"></p>
+                <p><label for="player_phone_number">Player Phone Number:</label>
+                    <input class="w3-input" type="tel" name="player_phone_number" id="playerPhoneNumber" required></p>
 
-                    <p><label for="player_address_street">Player Address Street:</label>
-                        <input class="w3-input" type="text" name="player_address_street" id="playerAddressStreet"></p>
+                <p><label for="player_address_street">Player Address Street:</label>
+                    <input class="w3-input" type="text" name="player_address_street" id="playerAddressStreet" required></p>
 
-                    <p><label for="player_address_city">Player Address City:</label>
-                        <input class="w3-input" type="text" name="player_address_city" id="playerAddressCity"></p>
+                <p><label for="player_address_city">Player Address City:</label>
+                    <input class="w3-input" type="text" name="player_address_city" id="playerAddressCity" required></p>
 
-                    <p><label for="player_address_zip">Player Address Zip Code:</label>
-                        <input class="w3-input" type="text" name="player_address_zip" id="playerAddressZip"></p>
+                <p><label for="player_address_zip">Player Address Zip Code:</label>
+                    <input class="w3-input" type="text" name="player_address_zip" id="playerAddressZip" required></p>
 
-                    <p><label for="player_usLacrosse_number">Player US Lacrosse Number:</label>
-                        <input class="w3-input" type="text" name="player_usLacrosse_number" id="usLacrosseNumber"></p>
+                <p><label for="player_usLacrosse_number">Player US Lacrosse Number:</label>
+                    <input class="w3-input" type="text" name="player_usLacrosse_number" id="usLacrosseNumber" required></p>
 
-                    <!-- Player Options Position Drop Down Group -->
-                    <p><label for="positions">Position:</label><br>
-                    <select id="positions">
+                <!-- Player Options Position Drop Down Group -->
+                <p><label for="positions">Position:</label><br>
+                    <select id="positions" required>
                         <option value=""></option>
                         <option value="attack"> Attack</option>
                         <option value="midfield"> Midfield</option>
@@ -119,18 +113,18 @@
                     <!-- Player Options Position Drop Down Group End -->
 
                     <!-- Player Options Team Selection Drop Down Group -->
-                    <p><label for="teamSelection">Team:</label><br>
-                    <select id="teamSelection">
+                <!-- <p><label for="teamSelection">Team:</label><br>
+                    <select id="teamSelection" required>
                         <option value=""></option>
                         <option value="Team one"> Team one</option>
                         <option value="Team two"> Team two</option>
                         <option value="Team three"> Team three</option>
-                    </select>
+                    </select> -->
                     <!-- Player Options Team Selection Drop Down Group End -->
 
                     <!-- Player Options Grad year Selection Drop Down Group -->
-                    <p><label for="gradYearSelection">Graduation Year:</label><br>
-                    <select id="gradYearSelection">
+                <p><label for="gradYearSelection">Graduation Year:</label><br>
+                    <select id="gradYearSelection" required>
                         <option value=""></option>
                         <option value="2020"> 2020</option>
                         <option value="2021"> 2021</option>
@@ -141,8 +135,8 @@
                     <!-- Player Options Grad Year Selection Drop Down Group End -->
 
                     <!-- Player Options Experience Selection Drop Down Group -->
-                    <p><label for="experienceSelection">Player Experience Year:</label><br>
-                    <select id="experienceSelection">
+                <p><label for="experienceSelection">Player Experience Year:</label><br>
+                    <select id="experienceSelection" required>
                         <option value=""></option>
                         <option value="none"> Never Played</option>
                         <option value="beginner"> Beginner</option>
@@ -151,36 +145,43 @@
                     </select>
                     <!-- Player Options Experience Selection Drop Down Group End -->
 
-                    <p><label for="high_school"> High School: </label>
-                        <input class="w3-input" type="text" name="high_school_selection" id="highSchoolSelection"></p>      
-            
-                    <!-- Player Options End-->
+                <p><label for="high_school"> High School: </label>
+                    <input class="w3-input" type="text" name="high_school_selection" id="highSchoolSelection" required></p>
 
-                    <!-- Parent Options -->
-                    <p><label for="first_name">Parent First Name:</label>
-                        <input class="w3-input" type="text" name="parent_first_name" id="parentFirstName"></p>
+                <!-- Player Options End-->
 
-                    <p><label for="last_name">Parent Last Name:</label>
-                        <input class="w3-input" type="text" name="parent_last_name" id="parentLastName"></p>
+                <!-- Parent Options -->
+                <p><label for="first_name">Parent First Name:</label>
+                    <input class="w3-input" type="text" name="parent_first_name" id="parentFirstName" required></p>
 
-                    <p><label for="parent_email">Parent Email:</label>
-                        <input class="w3-input" type="email" name="parent_email" id="parentEmail"></p>
-                    
-                    <p><label for="parent_phone_number">Parent Phone Number:</label>
-                        <input class="w3-input" type="tel" name="parent_phone_number" id="parentPhoneNumber"></p>
+                <p><label for="last_name">Parent Last Name:</label>
+                    <input class="w3-input" type="text" name="parent_last_name" id="parentLastName" required></p>
 
-                    <p><label for="parent_address_street">Parent Address Street:</label>
-                        <input class="w3-input" type="text" name="parent_address_street" id="parentAddressStreet"></p>
+                <p><label for="parent_email">Parent Email:</label>
+                    <input class="w3-input" type="email" name="parent_email" id="parentEmail" required></p>
 
-                    <p><label for="parent_address_city">Parent Address City:</label>
-                        <input class="w3-input" type="text" name="parent_address_city" id="parentAddressCity"></p>
+                <p><label for="parent_phone_number">Parent Phone Number:</label>
+                    <input class="w3-input" type="tel" name="parent_phone_number" id="parentPhoneNumber" required></p>
 
-                    <p><label for="parent_address_zip">Parent Address Zip:</label>
-                        <input class="w3-input" type="text" name="parent_address_zip" id="parentAddressZip"></p>
-                    <!-- Parent Options End -->
+                <p><label for="parent_address_street">Parent Address Street:</label>
+                    <input class="w3-input" type="text" name="parent_address_street" id="parentAddressStreet" required></p>
 
-                    <input value="Submit" type="submit" onclick="post()">
-                </form>
+                <p><label for="parent_address_city">Parent Address City:</label>
+                    <input class="w3-input" type="text" name="parent_address_city" id="parentAddressCity" required></p>
+
+                <p><label for="parent_address_zip">Parent Address Zip:</label>
+                    <input class="w3-input" type="text" name="parent_address_zip" id="parentAddressZip" required></p>
+                <!-- Parent Options End -->
+                <div>
+                    <label>
+                        <input type="checkbox" name="remember" style="margin-bottom:15px" id="agreement" required>By submitting this registration, I hereby certify that the applicant has a valid US Lacrosse Membership and is in good physical condition to participate in the WASATCH LACROSSE events.
+                        WASATCH LACROSSE and our staff are not responsible and will not provide payment of any medical, dental, hospital or laboratory fees due to injury incurred while participating in the WASATCH LACROSSE events or during travel to and from the events.
+                      </label>
+                </div>
+
+
+                <input value="Submit" type="submit" onclick="post()">
+            </form>
         </div>
         <!-- Registration End -->
 
@@ -200,7 +201,7 @@
             const value = e.options[e.selectedIndex].value;
             return value
         }
-        
+
         function getTournamentSelection() {
             const selections = []
             const ele = document.getElementsByName("whichTournament");
