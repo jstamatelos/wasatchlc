@@ -151,10 +151,8 @@
                     </select>
                     <!-- Player Options Experience Selection Drop Down Group End -->
 
-                    <!-- Player Options High School Selection Drop Down Group -->
                     <p><label for="high_school"> High School: </label>
-                        <input class="w3-input" type="text" name="high_school_selection" id="highSchoolSelection"></p>
-                    <!-- Player Options High School Selection Drop Down Group End -->                    
+                        <input class="w3-input" type="text" name="high_school_selection" id="highSchoolSelection"></p>      
             
                     <!-- Player Options End-->
 
@@ -220,15 +218,11 @@
             const first = document.getElementById("firstName").value
             const last = document.getElementById("lastName").value
             const registrantEmail = document.getElementById("email").value
-            if (!registrantEmail) {
-                window.alert('Player Email is required')
-                return
-            }
             const gradYear = getDropDownSelection("gradYearSelection")
             const tournamentSelection = getDropDownSelection("whichTournament")
             const experience = getDropDownSelection("experienceSelection")
             const position = getDropDownSelection("positions")
-            const school = getDropDownSelection("highSchoolSelection")
+            const school = document.getElementById("highSchoolSelection").value
             const team = getDropDownSelection("teamSelection")
             const playerPhone = document.getElementById("playerPhoneNumber").value
             const playerAddressStreet = document.getElementById("playerAddressStreet").value
@@ -239,14 +233,11 @@
             const parentFirstName = document.getElementById("parentFirstName").value
             const parentLastName = document.getElementById("parentLastName").value
             const parentEmail = document.getElementById("parentEmail").value
-            if (!parentEmail) {
-                window.alert('Parent Email is required')
-                return
-            }
             const parentPhoneNumber = document.getElementById("parentPhoneNumber").value
             const parentAddressStreet = document.getElementById("parentAddressStreet").value
             const parentAddressCity = document.getElementById("parentAddressCity").value
             const parentAddressZip = document.getElementById("parentAddressZip").value
+            // formData
             const formData = {
                 firstName: first,
                 lastName: last,
